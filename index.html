@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]>
+<html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Shrinidhi Senthilkumar CV</title>
+    <meta name="description" content="This is my CV website for recruiters and connection to reach out">
+    <meta name="author" content="shrini">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="./static/css/default.css">
+    <link rel="stylesheet" href="./static/css/layout.css">
+    <link rel="stylesheet" href="./static/css/media-queries.css">
+    <link rel="stylesheet" href="./static/css/magnific-popup.css">
+
+    <!-- Script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="/static/css/font-awesome/js//solid.js"></script>
+    <script defer src="./static/css/font-awesome/js/brands.js"></script>
+
+    <!-- add the core fontawesome.js file -->
+    <script defer src="./static/css/font-awesome/js/fontawesome.js"></script>
+
+    <!-- support v4 icon references/syntax for SVG+JS -->
+    <script defer src="./static/css/font-awesome/js/v4-shims.js"></script>
+
+
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="./favicon.png">
+
+</head>
+
+<body>
+
+<!-- Header
+================================================== -->
+<header id="home">
+
+    <nav id="nav-wrap">
+
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+        <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">HOME</a></li>
+            <li><a class="smoothscroll" href="#about">ABOUT</a></li>
+            <li><a class="smoothscroll" href="#resume">Experience</a></li>
+            <li><a class="smoothscroll" href="#portfolio">PROJECTS</a></li>
+
+            <li><a class="smoothscroll" href="#contact">CONTACT</a></li>
+        </ul> <!-- end #nav -->
+
+    </nav> <!-- end #nav-wrap -->
+
+    <div class="row banner">
+        <div class="banner-text">
+            <h1 class="responsive-headline"> I'm  Shrinidhi Senthilkumar</h1>
+            <h3>I am from Chennai. I did <span> B.E computer science engineering</span>, in <span>Annamalai University</span> Chidambaram and
+                 Let's <a class="smoothscroll" href="#resume">FINDOUT MORE!,</a>
+                and learn more <a class="smoothscroll" href="#about">ABOUT ME</a>.</h3>
+            <hr/>
+            <ul class="social">
+                <!--               <li><a href=""><i class="fa fa-facebook"></i></a></li>-->
+
+                <!--               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+                <li><a href="https://www.linkedin.com/in/shrinidhisenthilkumar/" target="_blank"><i
+                        class="fa fa-linkedin"></i></a></li>
+                <!--               <li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+                <!--               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+                <!--               <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
+                <li><a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="scrolldown">
+        <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+    </p>
+
+</header> <!-- Header End -->
+
+
+<!-- About Section
+================================================== -->
+<section id="about">
+
+    <div class="row">
+
+        <div class="three columns">
+
+            <img class="profile-pic" src="./static/images/shrini.png" alt=""/>
+
+        </div>
+
+        <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>I am Shrinidhi, a dedicated and detail-oriented <span>Software Engineer</span> based in <span> Chennai.</span> My academic journey includes schooling at <span>SBSM</span> and <span>Holy Angels,</span> followed by a successful completion of a <span>Bachelor's degree in Computer Science Engineering from Annamalai University</span> in 2021. My professional experience has equipped me with a diverse skill set, ranging from creating campaigns using HTML and CSS at Verticurl to specializing in automation testing with Python, Selenium, and SQL databases during my tenure at Capgemini. Currently serving as a <span>Software Engineer at Inspirisys,</span> I work at SQL, Python automation, and working with SSIS packages for seamless data integration. My technical proficiency is complemented by soft skills such as punctuality, teamwork, and a positive attitude. Beyond my professional life, I find joy in dance, growing plants, cooking, and expressing my creativity through drawing. I bring a passion for technology, a commitment to excellence, and a collaborative spirit to any project or team I am a part of.
+            </p>
+
+            <div class="row">
+
+                <div class="columns contact-details">
+
+                    <h2>Contact Details</h2>
+                    <p class="address">
+                        <span>Shrinidhi Senthilkumar</span><br>
+                        <span>B4, RAGAMALIGA APTS,<br>
+						         135, AMBEDKAR STREET,<br>
+                            SEMBAKKAM,CHENNAI 600073.
+                     </span><br>
+                        <span>7338920924</span><br>
+                        <span>shrinidhi250100@gmail.com</span>
+                    </p>
+
+                </div>
+
+                <div class="columns download">
+                    <button id="downloadButton" class="btn bg-secondary">Download Resume</button>
+                </div>
+
+
+            </div> <!-- end row -->
+
+        </div> <!-- end .main-col -->
+
+    </div>
+        <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            // Replace 'your_resume.pdf' with the actual name of your PDF file
+            var pdfUrl = "./static/files/Shrinidhi's Resume.pdf"
+
+            // Creating a hidden anchor element to trigger the download
+            var downloadLink = document.createElement('a');
+            downloadLink.href = pdfUrl;
+            downloadLink.download = 'My-resume';
+            downloadLink.click();
+        });
+    </script>
+
+</section> <!-- About Section End-->
+
+
+<!-- Resume Section
+================================================== -->
+<section id="resume">
+
+    <!-- Work
+   ----------------------------------------------- -->
+    <div class="row work">
+
+        <div class="three columns header-col">
+            <h1><span>Experience</span></h1>
+        </div>
+
+        <div class="nine columns main-col">
+
+            <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3><a href="https://www.verticurl.com/" target="_blank">Verticurl
+                    </a>
+                    </h3>
+                    <p class="info">Technical Associate Engineer<span>&bull;</span> <em class="date">OCT 2021 - APRIL 2022</em></p>
+                    <p>
+                        Perform tasks on create and maintain Campaigns and Landing page with HTML, CSS, Bootstrap, Maketo tool and did Q/A.
+
+Developed and maintained database systems, enhancing data accuracy and accessibility.
+Conducted regular performance tuning, reducing query execution times.
+                    </p>
+
+                   </div>
+
+
+
+                </div>
+
+
+            <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3><a href="https://www.capgemini.com" target="_blank">CAPGEMINI
+                    </a>
+                    </h3>
+                    <p class="info"> Associate 1<span>&bull;</span> <em class="date">MAY 2022 - NOV 2023</em></p>
+                    <p>
+                        Developed and maintained database systems, enhancing data accuracy and accessibility.
+Conducted regular performance tuning, reducing query execution times.
+
+Worked on writing Test case and test suites and did manual testing and Automation testing in selenium python with Pytest, Robot Framework.
+                    </p>
+
+                   </div>
+
+
+
+                </div>
+
+
+                        <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3><a href="https://www.inspirisys.com/" target="_blank">INSPIRISYS
+                    </a>
+                    </h3>
+                    <p class="info"> Software Engineer<span>&bull;</span> <em class="date">Nov 2023 - PRESENT</em></p>
+                    <p>
+                        Experienced SQL Developer at Inspirisys specializing in backend development for comprehensive report generation. Proficient in crafting efficient queries, stored procedures, and leveraging SSIS for seamless ETL processes. Skilled in Python automation, transforming data into insightful reports. Adept at collaborating with cross-functional teams to optimize data workflows. Dedicated to driving data-driven decision-making through robust reporting solutions. Eager to contribute expertise in SQL, SSIS, and Python to innovative projects.
+
+                    </p>
+
+                   </div>
+
+
+
+                </div>
+
+            </div> <!-- item end -->
+
+ 
+
+    </div> <!-- End Work -->
+
+
+    <!-- Education
+    ----------------------------------------------- -->
+    <div class="row education">
+
+        <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+        </div>
+
+        <div class="nine columns main-col">
+
+            <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3><a href="https://annamalaiuniversity.ac.in/index.php" target="_blank">Annamalai University</a></h3>
+                    <p class="info">B.E Computer Science and Engineering  <span>&bull;</span> <em class="date">AUG
+                        2017 - June 2021</em>
+                    </p>
+
+                    <p>
+                        During my four years at Annamalai University, I actively served as an executive member in the Department of Computer Science, contributing significantly to the growth and development of the technical community. Beyond academics, I showcased my passion for web development by presenting insightful papers on both client-side and server-side scripting.
+
+In addition to my technical pursuits, I demonstrated versatility as an accomplished dancer and dedicated badminton player, highlighting my ability to balance technical acumen with artistic endeavors. As a proud NCC Corporal (CPL), I consistently exhibited strong leadership and discipline.
+
+I graduated with a B.E. in Computer Science and Engineering in 2021, and I am honored to be an alumnus/alumna of Annamalai University. If you share a connection with Annamalai University or have a passion for higher education, I invite you to connect with me. I am always eager to network and collaborate with fellow alumni and professionals, fostering meaningful connections in the dynamic field of technology and education.
+                    </p>
+
+                </div>
+
+            </div> <!-- item end -->
+
+
+
+        </div> <!-- main-col end -->
+
+    </div> <!-- End Education -->
+
+
+    <!-- Skills
+    ----------------------------------------------- -->
+    <div class="row skill">
+
+        <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+        </div>
+
+        <div class="nine columns main-col">
+
+            <p> In either of the above professional or educational experience I have gained plenty of the following
+                skills.
+            </p>
+
+            <div class="bars">
+
+                <ul class="skills">
+                    <li><span class="bar-expand sql"></span><em>SQL</em></li>
+                    <li><span class="bar-expand python"></span><em>ADVANCE PYTHON</em></li>
+
+                    <li><span class="bar-expand automation"></span><em>AUTOMATION TESTING</em></li>
+                    <li><span class="bar-expand manual"></span><em>MANUAL TESTING</em></li>
+                    <li><span class="bar-expand pytest"></span><em>PYTEST</em></li>
+                    <li><span class="bar-expand robot"></span><em>ROBOT FRAMEWORK</em></li>
+                    <li><span class="bar-expand bdd"></span><em>BDD</em></li>
+                    <li><span class="bar-expand selenium"></span><em>SELENIUM</em></li>
+                    <li><span class="bar-expand html5"></span><em>HTML5</em></li>
+                    <li><span class="bar-expand css"></span><em>css</em></li>
+                    <li><span class="bar-expand js"></span><em>JAVASCRIPT</em></li>
+                    <li><span class="bar-expand ssis"></span><em>SSIS</em></li>
+                    <li><span class="bar-expand flask"></span><em>FLASK</em></li>
+
+                </ul>
+
+            </div><!-- end skill-bars -->
+
+        </div> <!-- main-col end -->
+
+    </div> <!-- End skills -->
+
+</section> <!-- Resume Section End-->
+
+
+<!-- Portfolio Section
+================================================== -->
+<section id="portfolio">
+
+    <div class="row">
+
+        <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of My Projects.</h1>
+
+            <div align="center"><a target="_blank" href="./templates/projects.html"
+                    title="MY PROJECTS"><img    alt="" src="./static/images/computer.jpg"></a></div>
+
+
+
+
+
+
+
+
+               <!-- <div   class="columns portfolio-item">
+                    <div  class="item-wrap">
+                        <a target="_blank" href="./templates/projects.html"
+                           title="MY PROJECTS">
+                            <img  class="center"  alt="" src="./static/images/computer.jpg">
+                            <!--                            <iframe width="400" height="400" src="https://www.youtube.com/embed/tyzSSQ-oEN0?si=1B0n2gu5ityBmYBR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+                           <!-- <div class="overlay">
+                                <div class="portfolio-item-meta">
+                                    <h5>Project</h5>
+
+                                </div>
+                            </div>
+                            <div class="link-icon"><i class="icon-plus"></i></div>
+                        </a>
+
+                    </div>
+                </div>--> <!-- item end -->
+
+                <!--                <div class="columns portfolio-item">-->
+                <!--                    <div class="item-wrap">-->
+
+                <!--                        <a href="#modal-05" title="">-->
+                <!--                            <img alt="" src="./static/images/portfolio/farmerboy.jpg">-->
+                <!--                            <div class="overlay">-->
+                <!--                                <div class="portfolio-item-meta">-->
+                <!--                                    <h5>Farmer Boy</h5>-->
+                <!--                                    <p>Branding</p>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
+                <!--                        </a>-->
+
+                <!--                    </div>-->
+                <!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
+
+                <!--                <div class="columns portfolio-item">-->
+                <!--                    <div class="item-wrap">-->
+
+                <!--                        <a href="#modal-06" title="">-->
+                <!--                            <img alt="" src="./static/images/portfolio/girl.jpg">-->
+                <!--                            <div class="overlay">-->
+                <!--                                <div class="portfolio-item-meta">-->
+                <!--                                    <h5>Girl</h5>-->
+                <!--                                    <p>Photography</p>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
+                <!--                        </a>-->
+
+                <!--                    </div>-->
+                <!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
+
+                <!--                <div class="columns portfolio-item">-->
+                <!--                    <div class="item-wrap">-->
+
+                <!--                        <a href="#modal-07" title="">-->
+                <!--                            <img alt="" src="./static/images/portfolio/origami.jpg">-->
+                <!--                            <div class="overlay">-->
+                <!--                                <div class="portfolio-item-meta">-->
+                <!--                                    <h5>Origami</h5>-->
+                <!--                                    <p>Illustrration</p>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
+                <!--                        </a>-->
+
+                <!--                    </div>-->
+                <!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
+
+                <!--                <div class="columns portfolio-item">-->
+                <!--                    <div class="item-wrap">-->
+
+                <!--                        <a href="#modal-08" title="">-->
+                <!--                            <img alt="" src="./static/images/portfolio/retrocam.jpg">-->
+                <!--                            <div class="overlay">-->
+                <!--                                <div class="portfolio-item-meta">-->
+                <!--                                    <h5>Retrocam</h5>-->
+                <!--                                    <p>Web Development</p>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
+                <!--                        </a>-->
+
+                <!--                    </div>-->
+                <!--                </div>  &lt;!&ndash; item end &ndash;&gt;-->
+
+            </div> <!-- portfolio-wrapper end -->
+
+        </div> <!-- twelve columns end -->
+
+
+        <!--        &lt;!&ndash; Modal Popup-->
+        <!--         -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; &ndash;&gt;-->
+
+        <!--        <div id="modal-01" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Coffee Cup</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-01 End &ndash;&gt;-->
+
+        <!--        <div id="modal-02" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Console</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-02 End &ndash;&gt;-->
+
+        <!--        <div id="modal-03" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Judah</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Branding</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-03 End &ndash;&gt;-->
+
+        <!--        <div id="modal-04" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Into the Light</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Photography</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-04 End &ndash;&gt;-->
+
+        <!--        <div id="modal-05" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Farmer Boy</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-05 End &ndash;&gt;-->
+
+        <!--        <div id="modal-06" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Girl</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Photography</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-06 End &ndash;&gt;-->
+
+        <!--        <div id="modal-07" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Origami</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-07 End &ndash;&gt;-->
+
+        <!--        <div id="modal-08" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Retrocam</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-01 End &ndash;&gt;-->
+
+
+    </div> <!-- row End -->
+
+</section> <!-- Portfolio Section End-->
+
+
+<!-- Call-To-Action Section
+================================================== -->
+
+
+<!-- Contact Section
+================================================== -->
+<section id="contact">
+
+<div  align="center">
+
+                       <a href="contact.html" target="_blank"><button>CONTACT ME</button></a>
+
+                </div>
+
+
+
+
+</section> <!-- Contact Section End-->
+
+
+<!-- footer
+================================================== -->
+<footer>
+
+    <div class="row">
+
+        <div class="twelve columns">
+
+            <ul class="social-links">
+
+                <li><a href="https://www.linkedin.com/in/shrinidhi-senthilkumar-4047811b1/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/shrinidz" target="_blank"><i class="fa fa-github"></i></a></li>
+
+            </ul>
+
+            <ul class="copyright">
+                <li>&copy; Copyright Shrinidhi Senthilkumar 2024 </li>
+
+            </ul>
+
+        </div>
+
+        <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+    </div>
+
+</footer> <!-- Footer End-->
+
+<!-- Java Script
+================================================== -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/magnific-popup.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+
+</html>

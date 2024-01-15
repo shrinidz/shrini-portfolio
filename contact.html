@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            color: navyblue;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #bdc3c7;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        input:focus,
+        textarea:focus {
+            border: 1px solid #3498db;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        .alert-danger {
+            color: #d9534f;
+            background-color: #f2dede;
+            border: 1px solid #ebccd1;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+        .container {
+            max-width: 90%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        input,
+        textarea {
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="inputMessage">Message</label>
+                <textarea class="form-control" id="inputMessage" rows="5" placeholder="Your message" required></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+        </form>
+
+        <div id="errorAlert" class="alert alert-danger" style="display: none;">
+            Please fill in all fields.
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function submitForm() {
+            // Get user input
+            var userEmail = document.getElementById('inputEmail').value;
+            var userMessage = document.getElementById('inputMessage').value;
+
+            // Check if both fields are filled
+            if (userEmail.trim() === "" || userMessage.trim() === "") {
+                document.getElementById('errorAlert').style.display = 'block';
+                return;
+            } else {
+                document.getElementById('errorAlert').style.display = 'none';
+            }
+
+            // Create mailto link
+            var mailtoLink = 'mailto:' + encodeURIComponent(userEmail) +
+                '?subject=Message from Portfolio Contact Form' +
+                '&body=' + encodeURIComponent(userMessage);
+
+            // Open user's email client
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+
+</html>
